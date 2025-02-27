@@ -1,6 +1,8 @@
 console.log("ejercicio de fetch pokemones ");
 const url = "https://pokeapi.co/api/v2/pokemon?limit=30&offset=15",
-  $container = document.querySelector(".grid-container");
+  $container = document.querySelector(".grid-container"),
+  imgBgCard =
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f7705ec-8c49-4eed-a56e-c21f3985254c/dah43cy-a8e121cb-934a-40f6-97c7-fa2d77130dd5.png/v1/fill/w_1024,h_1420/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyMCIsInBhdGgiOiJcL2ZcLzRmNzcwNWVjLThjNDktNGVlZC1hNTZlLWMyMWYzOTg1MjU0Y1wvZGFoNDNjeS1hOGUxMjFjYi05MzRhLTQwZjYtOTdjNy1mYTJkNzcxMzBkZDUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.9GzaYS7sd8RPY5FlHca09J9ZQZ9D9zI69Ru-BsbkLDA";
 let template = "";
 
 const getPokemons = async (url) => {
@@ -21,7 +23,7 @@ const getPokemons = async (url) => {
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img src="img/contraparte.jpeg" alt="contraparte"/>
+              <img src="${imgBgCard}" alt="contraparte"/>
             </div>
             <div class="card-back">
             <img src = "${data.sprites.other.dream_world.front_default}">
