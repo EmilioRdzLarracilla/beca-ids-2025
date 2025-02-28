@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mi primera pagina curso ids</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>Soy un h1</h1>
+    <h2>Soy un h2</h2>
+    <h3>Soy un h3</h3>
+    <h4>Soy un h4</h4>
+    <h5>Soy un h5</h5>
+    <h6>Soy un h6</h6>
+    <p>soy un parrafo</p>
+    <a href="https://www.youtube.com/watch?v=y6HIGt5RleQ" target="_blank"
+      >soy un link
+    </a>
+    <br />
+    <p><strong>soy un parrafo ocn etiqueta strong</strong>r</p>
+    <p><em>soy un parrafo con la etiqueta em </em></p>
+    <p><u>soy un parrafo subrayado</u></p>
+    <p>H<sub>2</sub>O</p>
+    <p>super indice r<sup>2</sup></p>
+    <p><mark>textom marcado</mark></p>
+    <p>ejemplo de codigo <code>console.log("hola mundo")</code></p>
+    <hr />
+    <p>lista desordenanda</p>
+    <ul>
+      <li>cliente 1</li>
+      <li>cliente 2</li>
+      <li>cliente 3</li>
+      <li>cliente 4</li>
+      <li>cliente 5</li>
+      <li>cliente 6</li>
+      <li>cliente 7</li>
+      <li>cliente 8</li>
+      <li>cliente 9</li>
+      <li>cliente 10</li>
+      <li>cliente 11</li>
+      <li>cliente 12</li>
+      <li>cliente 13</li>
+      <li>cliente 14</li>
+      <li>cliente 15</li>
+      <li>cliente 16</li>
+      <li>cliente 17</li>
+      <li>cliente 18</li>
+      <li>cliente 19</li>
+      <li>cliente 20</li>
+    </ul>
+    <hr />
+
+    <p>lista ordenanda</p>
+    <ol>
+      <li>producto 1</li>
+      <li>producto 2</li>
+      <li>producto 3</li>
+      <li>producto 4</li>
+      <li>producto 5</li>
+      <li>producto 6</li>
+      <li>producto 7</li>
+      <li>producto 8</li>
+      <li>producto 9</li>
+      <li>producto 10</li>
+      <li>producto 11</li>
+      <li>producto 12</li>
+      <li>producto 13</li>
+      <li>producto 14</li>
+      <li>producto 15</li>
+      <li>producto 16</li>
+      <li>producto 17</li>
+      <li>producto 18</li>
+      <li>producto 19</li>
+      <li>producto 20</li>
+    </ol>
+    <hr />
+    <p>tabla</p>
+
+    <table border="1">
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+      </tr>
+      <tr>
+        <td>Fila 1, Celda 1</td>
+        <td>Fila 1, Celda 2</td>
+        <td>Fila 1, Celda 3</td>
+      </tr>
+      <tr>
+        <td>Fila 2, Celda 1</td>
+        <td>Fila 2, Celda 2</td>
+        <td>Fila 2, Celda 3</td>
+      </tr>
+    </table>
+    <hr />
+    <p>etiqueta object</p>
+    <object
+      data="Lorem_ipsum.pdf"
+      type="application/pdf"
+      width="800"
+      height="600"
+    >
+      <p>
+        Tu navegador no soporta la visualización de PDFs.
+        <a href="Lorem_ipsum.pdf">Descarga el PDF aquí</a>.
+      </p>
+    </object>
+    <hr />
+    <p>formulario</p>
+    <form action="/enviar_formulario" method="post">
+      <fieldset>
+        <legend>Información Personal</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          required
+        /><br /><br />
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+        /><br /><br />
+
+        <label for="edad">Edad:</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          min="18"
+          max="99"
+        /><br /><br />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" /><br /><br />
+
+        <label for="color_favorito">Color Favorito:</label>
+        <input
+          type="color"
+          id="color_favorito"
+          name="color_favorito"
+        /><br /><br />
+
+        <label for="archivo">Subir Archivo:</label>
+        <input type="file" id="archivo" name="archivo" /><br /><br />
+
+        <label for="rango">Rango (1-10):</label>
+        <input
+          type="range"
+          id="rango"
+          name="rango"
+          min="1"
+          max="10"
+        /><br /><br />
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" /><br /><br />
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" /><br /><br />
+
+        <label for="busqueda">Buscar:</label>
+        <input type="search" id="busqueda" name="busqueda" /><br /><br />
+
+        <label for="mes">Mes:</label>
+        <input type="month" id="mes" name="mes" /><br /><br />
+
+        <label for="semana">Semana:</label>
+        <input type="week" id="semana" name="semana" /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Opciones</legend>
+
+        <label>Género:</label><br />
+        <input type="radio" id="masculino" name="genero" value="masculino" />
+        <label for="masculino">Masculino</label><br />
+        <input type="radio" id="femenino" name="genero" value="femenino" />
+        <label for="femenino">Femenino</label><br />
+        <input type="radio" id="otro" name="genero" value="otro" />
+        <label for="otro">Otro</label><br /><br />
+
+        <label>Intereses:</label><br />
+        <input type="checkbox" id="deporte" name="intereses" value="deporte" />
+        <label for="deporte">Deporte</label><br />
+        <input type="checkbox" id="musica" name="intereses" value="musica" />
+        <label for="musica">Música</label><br />
+        <input type="checkbox" id="viajes" name="intereses" value="viajes" />
+        <label for="viajes">Viajes</label><br /><br />
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+          <option value="mexico">México</option>
+          <option value="espana">España</option>
+          <option value="argentina">Argentina</option></select
+        ><br /><br />
+
+        <label for="comentarios">Comentarios:</label><br />
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Restablecer" />
+      <button type="button">Botón Genérico</button>
+    </form>
+    <hr />
+    <p>etiqueta img</p>
+    <img src="121551147_3665941093440726_13810880936134005_n.jpg" alt="skate" />
+    <hr />
+    <div>soy un div etiqueta de bloque por excelencia</div>
+    <span>soy un span etiqueta en linea por excelencia</span>
+
+    <hr />
+    <p>etiquetas semanticas</p>
+
+    <article>soy un article</article>
+    <section>soy un section</section>
+    <header>soy un header</header>
+    <main>soy la etiqueta main</main>
+    <footer>soy el footer</footer>
+    <nav>soy una etiqueta nav</nav>
+    <aside>soy un aside</aside>
+
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/LfsSyl75Cpc?si=4Fy39FmT0TRZ4Vny"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <p>etiqueta embed</p>
+    <embed
+      src="Lorem_ipsum.pdf"
+      type="application/pdf"
+      width="800"
+      height="600"
+    />
+    <hr />
+    <p>sonido</p>
+    <audio src="russia-eas-alarm-1964-269169.mp3" controls="true"></audio>
+    <hr />
+    <video src="226795_tiny.mp4" controls="true"></video>
+    <hr />
+    <script>
+      console.log("hola mundo desde la etiqueta script");
+    </script>
+  </body>
+</html>
