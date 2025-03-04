@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="search">
+        <img class="search-image" src="imgs/glogo.png" alt="google-logo" />
+        <form class="form">
+          <div class="form-search">
+            <img src="imgs/search.png" alt="icon" class="form-icon" />
+            <input
+              class="form-input"
+              list="sports-list"
+              id="sport-list-choice"
+              name="sport-list-choice"
+              required
+            />
+            <datalist id="sports-list">
+              <option value="Fútbol"></option>
+              <option value="Baloncesto"></option>
+              <option value="Tenis"></option>
+              <option value="Voleibol"></option>
+              <option value="Natación"></option>
+              <option value="Atletismo"></option>
+              <option value="Béisbol"></option>
+              <option value="Hockey"></option>
+              <option value="Golf"></option>
+              <option value="Rugby"></option>
+              <option value="Boxeo"></option>
+              <option value="Artes Marciales"></option>
+              <option value="Ciclismo"></option>
+              <option value="Esquí"></option>
+              <option value="Surf"></option>
+              <option value="Ajedrez"></option>
+              <option value="Patinaje"></option>
+              <option value="Gimnasia"></option>
+              <option value="Balonmano"></option>
+              <option value="Fútbol Americano"></option>
+            </datalist>
+          </div>
+          <button class="btn">Buscar en google</button>
+          <button class="btn">
+            <a href="https://doodles.google/">Voy a tener suerte</a>
+          </button>
+        </form>
+      </section>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
