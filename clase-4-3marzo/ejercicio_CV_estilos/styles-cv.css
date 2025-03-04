@@ -1,5 +1,16 @@
+:root {
+  --primary-color: white;
+  --backgroud-primary-color: #222;
+  --text-size: 1.15rem;
+}
+
 body {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+  line-height: 2;
 }
 
 *,
@@ -10,8 +21,190 @@ body {
   box-sizing: inherit;
 }
 
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 4rem;
+  z-index: 99;
+}
 .section {
   width: 100%;
   height: 100vh;
-  background-color: red;
+  padding-top: 0;
+  background-color: var(--backgroud-primary-color);
+}
+
+.navbar-logo {
+  width: 3rem;
+  height: auto;
+  padding-top: 0.5rem;
+}
+.navbar-logo:hover {
+  animation: tremble 0.5s ease;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.navbar-menu {
+  width: 70%;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-menu > li {
+  padding: 0 0.5rem;
+  transition: all ease 0.5s;
+}
+
+.navbar-menu > li:hover {
+  border-bottom: thick solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+}
+
+.start-hero {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(imgs/pico\ de\ orizaba.jpg);
+  background-size: cover;
+}
+
+.start-content {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  padding-top: 30vh;
+  font-size: 5vh;
+  text-align: center;
+  z-index: 9;
+}
+.knowme-content {
+  padding-top: 30vh;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.knowme-text {
+  font-size: var(--text-size);
+  padding: 2rem;
+  color: var(--primary-color);
+  text-align: justify;
+}
+
+.knowme-text > ul {
+  list-style: none;
+}
+.knowme-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+
+.knowme-image:hover {
+  transform: translateY(-1rem);
+  box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+  -webkit-box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+  -moz-box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+}
+#experience {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.experience-content {
+  text-align: center;
+  font-size: var(--text-size);
+  color: var(--primary-color);
+}
+
+#academic {
+  font-size: var(--text-size);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.academic-title {
+  padding: 5rem 0;
+}
+
+#hobbies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem;
+  font-size: var(--text-size);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+figure {
+  clip-path: ellipse(30px, 50px);
+  border-radius: 10px;
+  box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+  -webkit-box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+  -moz-box-shadow: -1px 22px 86px -9px rgba(255, 247, 247, 0.75);
+}
+
+figure > img {
+  border-radius: inherit;
+  width: 250px;
+  height: auto;
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(-15deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  45% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }

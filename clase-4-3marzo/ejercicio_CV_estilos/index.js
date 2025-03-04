@@ -5,6 +5,7 @@ const modal = d.querySelector(".modal");
 modal.addEventListener("click", () => {
   modal.close();
   form.reset();
+  d.body.classList.remove("blurModal");
 });
 
 const userAccess = {
@@ -33,5 +34,6 @@ form.addEventListener("submit", (e) => {
     window.location.href = "/CV_emilio.html";
   } else {
     modal.showModal();
+    d.body.classList.add("blurModal");
   }
 });

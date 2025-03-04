@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevas etiquetas html</title>
+  </head>
+  <body>
+    <!-- es wrapper para ocntener imagen y una descripción -->
+    <figure>
+      <img
+        src="https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
+        alt="dog"
+      />
+      <figcaption>cachorro</figcaption>
+    </figure>
+    <!-- etiqueta meter -->
+
+    <label for="fuel">Fuel level:</label>
+
+    <meter
+      id="fuel"
+      min="0"
+      max="100"
+      low="33"
+      high="66"
+      optimum="80"
+      value="50"
+    >
+      at 50/100
+    </meter>
+
+    <p>barra de progreso batería</p>
+    <p>Battery level: <meter min="0" max="100" value="75">75%</meter></p>
+
+    <!-- data list -->
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input
+      list="ice-cream-flavors"
+      id="ice-cream-choice"
+      name="ice-cream-choice"
+    />
+
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate"></option>
+      <option value="Coconut"></option>
+      <option value="Mint"></option>
+      <option value="Strawberry"></option>
+      <option value="Vanilla"></option>
+    </datalist>
+
+    <!-- etiqueta template -->
+
+    <template id="template">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil aliquid
+        sed ea, alias vel blanditiis sit perferendis aspernatur quasi,
+        recusandae, dolore culpa! Non ducimus delectus asperiores omnis maxime
+        aperiam eius?
+      </p>
+    </template>
+    <script>
+      const template = document.querySelector("#template");
+      const clone = template.content.cloneNode(true);
+      document.body.appendChild(clone);
+    </script>
+  </body>
+</html>

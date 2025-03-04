@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles-cv.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <div class="logo">FL3exx</div>
-        <ul>
-          <li><a href="#start">inicio</a></li>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#"
+          ><img class="navbar-logo" src="imgs/puzzle-piece.svg" alt="logo"
+        /></a>
+        <ul class="navbar-menu">
+          <li><a href="#">inicio</a></li>
           <li><a href="#knowme">conóceme</a></li>
-          <li><a href="#experience">experiencia profesioanl</a></li>
+          <li><a href="#experience">experiencia profesional</a></li>
           <li><a href="#academic">estudios</a></li>
           <li><a href="#hobbies">hobbies</a></li>
         </ul>
@@ -22,12 +24,87 @@
 
     <main>
       <section id="start" class="section">
-        <div class="hero"></div>
+        <div class="start-hero">
+          <section class="start-content">
+            <h2>Emilio Rodriguez Larracilla</h2>
+            <p>Ingeniero electricista</p>
+            <p>bienvenidos a mi pagina web</p>
+          </section>
+        </div>
       </section>
-      <section id="knowme" class="section">conoceme</section>
-      <section id="experience" class="section">experiencia profesional</section>
-      <section id="academic" class="section"></section>
-      <section id="hobbies" class="section"></section>
+      <section id="knowme" class="section">
+        <section class="knowme-content">
+          <div class="knowme-text">
+            <p>
+              Profesional con experiencia en el sector eléctrico ,
+              principalmente en el area de ahorro energético, entusiasta por el
+              desarrollo web y la inteligencia artificial
+            </p>
+            <br /><br />
+            <ul>
+              <li>Edad : 29 años</li>
+              <li>lugar de nacimiento: Atzitzintla Puebla</li>
+              <li>telefono : 2218195541</li>
+              <li>correo: emilio.rodriguez@ids.comn.mx</li>
+              <li>skills: CSS, javascript, HTML, pyhton, tensorflow</li>
+            </ul>
+          </div>
+          <img src="imgs/emilio.jpg" alt="emilio" class="knowme-image" />
+        </section>
+      </section>
+      <section id="experience" class="section">
+        <section class="experience-content">
+          <ul>
+            <li>
+              Becario en Iluminación en Fideicomiso para el ahorro de energia
+              eléctrica
+            </li>
+            <li>Ingeniero de ventas y asesoria en Encao importadora</li>
+            <li>
+              Colaborador en el desarrollo de sitio web para la organización sin
+              fines de lucro Teescucho
+            </li>
+          </ul>
+        </section>
+        <img src="imgs/fide.webp" alt="fide" class="experience-img" />
+      </section>
+      <section id="academic" class="section">
+        <h2 class="academic-title">Trayectoria académica</h2>
+        <ul>
+          <li>
+            Colegio de Bachilleres del Estado de Puebla P-22 Ciudad Serdán
+            Puebla
+          </li>
+          <li>
+            Escuela Superior de Ingeniería Mecánica y Eléctrica unidad Zacatenco
+            del Instituto Politécnico Nacional
+          </li>
+          <li>
+            Seminario de Titulación en Reconocimiento de patrones en el área
+            médica ICE ESIME Zacatenco
+          </li>
+        </ul>
+      </section>
+      <section id="hobbies" class="section">
+        <section class="hobbies-container">
+          <figure>
+            <img src="imgs/skate.png" alt="skating" />
+            <figcaption>patinar</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/leer.jpg" alt="reading" />
+            <figcaption>Leer</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/cocinar.webp" alt="cooking" />
+            <figcaption>cocinar</figcaption>
+          </figure>
+          <figure>
+            <img src="imgs/instalaciones.webp" alt="installing" />
+            <figcaption>reparaciones electricas</figcaption>
+          </figure>
+        </section>
+      </section>
     </main>
     <footer></footer>
   </body>
