@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 60%;
+  height: 40vh;
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formLogin {
+  background-color: #fff;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+.formLogin > input {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #fff5e4;
+}
+
+.formLogin > button {
+  background-color: #6a9c89;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-style: none;
+  transition: all ease 0.5s;
+}
+
+.formLogin > button:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
