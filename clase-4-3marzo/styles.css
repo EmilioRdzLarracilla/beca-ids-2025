@@ -1,0 +1,42 @@
+table,
+td,
+th,
+tr {
+  border: thin solid black;
+  border-spacing: 0;
+}
+
+th {
+  background-color: crimson;
+  color: white;
+}
+
+td,
+th {
+  padding: 0.5rem 1rem;
+}
+
+.container {
+  border: thin solid black;
+  width: 30%;
+}
+
+.formulario {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-betweens;
+}
+
+.item > input {
+  width: 60%;
+}

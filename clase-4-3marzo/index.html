@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Formularios en html</h2>
+
+    <form action="">
+      <label for="acept"> aceptar terminos y condiciones</label>
+      <input type="checkbox" name="acept" id="acept" checked /><br />
+      <label for="radio">selecciona una de las dos opciones</label><br />
+      <input type="radio" name="opcion" id="option" />A<br />
+      <input type="radio" name="opcion" id="option-2" />B<br />
+      <label for="options">seleccione su pais de origen</label>
+      <select name="options" id="options">
+        <option selected value="default-option">seleccione un opción</option>
+        <option value="brasil">Brasil</option>
+        <option value="mexico">México</option>
+        <option value="ecuador">Ecuador</option>
+        <option value="china">China</option>
+      </select>
+      <br />
+      <label for="textarea">Deje sus sugerencias y comentarios</label><br />
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="15"
+        rows="8"
+        disabled
+      ></textarea
+      ><br />
+      <input type="submit" value="click me" />
+
+      <fieldset>
+        <legend>informacion personal</legend>
+        <!-- campos de entrada -->
+        <label for="nombre">nombre</label>
+        <!-- la etiqueta label nos ayuda a identificar campos -->
+        <input id="nombre" type="text" name="nombre" /><br />
+        <label for="pass">contraseña</label>
+        <input type="password" name="pass" id="pass" /><br />
+      </fieldset>
+    </form>
+
+    <h2>ejercicio tabla de productoss</h2>
+
+    <div class="container">
+      <form class="formulario">
+        <div class="item">
+          <label for="producto">producto : </label>
+          <input type="producto" id="producto" required />
+        </div>
+        <div class="item">
+          <label for="precio">precio : </label>
+          <input type="number" id="precio" required />
+        </div>
+        <div class="item">
+          <label for="descripcion">descripción : </label>
+          <input type="text" id="descripcion" required />
+        </div>
+        <div class="item">
+          <label for="disponibilidad">disponibilidad :</label>
+          <select name="disponibilidad" id="disponibilidad">
+            <option value="">seleccione una opción</option>
+            <option value="disponible">disponible</option>
+            <option value="no disponible">no disponible</option>
+            <option value="proximamente en tienda">
+              proximamente en tienda
+            </option>
+          </select>
+        </div>
+
+        <button type="submit">enviar producto</button>
+        <!--   <input type="submit" value="enviar producto" /> -->
+      </form>
+    </div>
+    <br /><br /><br />
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>producto</th>
+          <th>precio</th>
+          <th>descripcion</th>
+          <th>disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody class="tabla-body"></tbody>
+    </table>
+
+    <a href="multimedia.html" target="_blank">elementos multimedia de html</a>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>estilos y etiquetas semánticas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      button {
+        transition: all ease 0.5s;
+      }
+
+      button:hover {
+        transform: scale(1.15);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="text">nombre</label>
+      <input id="text" type="text" />
+      <button>enviar</button>
+    </form>
+
+    <h2>etiquetas semánticas</h2>
+    <header>
+      <p>soy un header</p>
+    </header>
+    <nav>
+      etiqueta nav
+      <ul>
+        <li>navegacion 1</li>
+        <li>navegacion 2</li>
+        <li>navegacion 3</li>
+        <li>navegacion 4</li>
+        <li>navegacion 5</li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>soy la etiqueta main</p>
+
+      <dialog>
+        <p>que pasa banda</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim in non
+          exercitationem ipsa explicabo obcaecati quidem id similique porro
+          fugit. Illum rem possimus assumenda delectus praesentium, incidunt
+          molestiae vitae id.
+        </p>
+      </dialog>
+
+      <article>soy un articulo</article>
+      <article>
+        <section>sección 1</section>
+        <section>sección 2</section>
+        <section>sección 3</section>
+        <section>sección 4</section>
+        <section>sección 5</section>
+      </article>
+    </main>
+    <aside>
+      <p>soy un aside</p>
+    </aside>
+    <footer>
+      <p>soy un footer</p>
+    </footer>
+    <!-- generar un acordeon -->
+    <details>
+      <summary>detalles</summary>
+      <p>
+        esto se debe mostrar al darle click al details a la etiqueta details
+      </p>
+    </details>
+  </body>
+</html>
