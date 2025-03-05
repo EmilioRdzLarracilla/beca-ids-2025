@@ -59,10 +59,23 @@
         aperiam eius?
       </p>
     </template>
+    <br /><br />
+    <input id="predictiveInput" type="text" />
+
     <script>
       const template = document.querySelector("#template");
       const clone = template.content.cloneNode(true);
       document.body.appendChild(clone);
+
+      const input = document.querySelector("#predictiveInput");
+      const listToSearch = ["rojo", "azul", "verde"];
+      let texto = "";
+
+      input.addEventListener("input", ({ data }) => {
+        texto += data;
+
+        listToSearch.filter((el) => el);
+      });
     </script>
   </body>
 </html>
